@@ -60,7 +60,17 @@
       <!--------------------------------hero---------------------------->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button-primary" type="button">Заказать услугу</button>
+        <button class="button-primary" type="button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal-wraper">
+            <button class="modal-btn" data-modal-close>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/sprite.svg#modal-icon"></use>
+              </svg>
+            </button>
+            <!-- <form class="modal-form" action=""></form> -->
+          </div>
+        </div>
       </section>
       <!------------------------------ особенности ---------------->
       <section class="section-specifics">
@@ -116,17 +126,19 @@
       </section>
       <!---------------------------section "чим займаємось"---------------->
       <section class="section">
-        <div class="container">
+        <div class="container gallery">
           <h2 class="title">Чем мы занимаемся</h2>
 
           <ul class="item">
             <li class="img">
               <img
+                class="gallery-item"
                 src="./images/what-are-we-doing/box-1.jpg"
                 alt="внимательная работа"
                 width="370"
                 height="294"
               />
+              <p class="text">Десктопные приложения</p>
             </li>
             <li class="img">
               <img
@@ -135,6 +147,7 @@
                 width="370"
                 height="294"
               />
+              <p class="text">Мобильные приложения</p>
             </li>
             <li class="img">
               <img
@@ -143,6 +156,7 @@
                 width="370"
                 height="294"
               />
+              <p class="text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -570,5 +584,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
