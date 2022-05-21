@@ -279,6 +279,8 @@ button {
   z-index: 10;
 
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -324,37 +326,21 @@ button {
   transition: 250ms;
 }
 
-.backdrop .modal-wraper {
+.backdrop.modal-wraper {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   transition: 250ms;
 }
 
-/* .slide-bck-center {
-  -webkit-animation: slide-bck-center 0.45s cubic-bezier(0.47, 0, 0.745, 0.715) reverse backwards;
-  animation: slide-bck-center 0.45s cubic-bezier(0.47, 0, 0.745, 0.715) reverse backwards;
+.rotate-scale-up {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
 }
 
-@-webkit-keyframes slide-bck-center {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  100% {
-    -webkit-transform: translateZ(-400px);
-    transform: translateZ(-400px);
-  }
+.modal-wraper {
+  transform: translate(-50%, -50%) scale(1);
 }
-@keyframes slide-bck-center {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  100% {
-    -webkit-transform: translateZ(-400px);
-    transform: translateZ(-400px);
-  }
-} */
+
 /* ---------------------------------saction "особенности"------------------------ */
 
 .section-partners {
